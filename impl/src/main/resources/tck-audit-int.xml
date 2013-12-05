@@ -747,9 +747,15 @@
 
     <section id="5.2.2" title="Invocation Order of Interceptors with Superclasses">
 
-        <assertion id="a">
-            <text>If an interceptor class itself has superclasses, the interceptor methods defined by the interceptor class’s superclasses are invoked before the interceptor method defined by the interceptor class, most general superclass first.</text>
-        </assertion>
+        <group>
+            <text>If an interceptor class itself has superclasses, the interceptor methods defined by the interceptor class's superclasses are invoked before the interceptor method defined by the interceptor class, most general superclass first.</text>
+            <assertion id="a">
+                <text>Test interceptors declared using the Interceptors annotation.</text>
+            </assertion>
+            <assertion id="b">
+                <text>Test interceptors declared using interceptor bindings.</text>
+            </assertion>
+        </group>
 
     </section>
 
